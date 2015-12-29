@@ -6,7 +6,8 @@ class GPIOHelper(object):
     exportPath = "/sys/class/gpio/gpiochip0/subsystem/export"
     pinDirectionPath = "/sys/class/gpio/gpio$/direction"
     pinValuePath = "/sys/class/gpio/gpio$/value"
-    pins = [0, 1, 6, 7, 8, 12, 13, 14, 23, 26, 21, 20, 19, 18]
+    # https://wiki.onion.io/Tutorials/Using-the-GPIOs
+    pins = [0, 1, 6, 7, 8, 12, 13, 14, 15, 16, 17, 23, 26, 19, 18]
 
     def __init__(self):
             for pin in self.pins:
